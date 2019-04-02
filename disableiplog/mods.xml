@@ -1,0 +1,6 @@
+<file name="core/app/QueryString.php">
+	<operation>
+		<search position="replace">$_SERVER['REMOTE_ADDR'] = expand_ip($_SERVER['REMOTE_ADDR']);</search>
+		<add>$_SERVER['REMOTE_ADDR'] = expand_ip($settings['disableip']);</add>
+	</operation>
+</file>

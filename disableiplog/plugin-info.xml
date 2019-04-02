@@ -1,0 +1,13 @@
+<?xml version="1.0" standalone="yes" ?>
+<plugin id="Whyned:DisableIPLog">
+	<name>DisableIPLog</name>
+	<author>Whyned</author>
+	<description></description>
+	<version>1.0</version>
+	<settings>
+		<setting name="disableip" default="0.0.0.0" />
+	</settings>
+	<hooks>
+		<function point="behavior" function="dil_behavior" filename="$plugindir/DisableIPLog"/>
+	</hooks>
+</plugin>
